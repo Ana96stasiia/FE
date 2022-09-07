@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .card {
+        border: 2px solid grey; /*рамка*/
+        border-radius: 8px; /*закругление*/
+        padding: 20px; /*внутренние отступы*/
+        transition: all .5s ease-out; /*задержка заливки, плавный переход в другой цвет*/
+      }
+      .card__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .card__avatar {
+        width: 250px;
+        height: 300px;
+      }
+      .card__message {
+        font-size: 1.5 rem;
+      }
+      .card__message--green {
+        border-bottom: 5px solid green;
+      }
+      .card__date {
+        text-align: right;
+        color: black;
+      }
+      /*заливка цветом, когда наводишь курсор*/
+      .card:hover {
+        background: palegoldenrod;
+      }
+    </style>
+  </head>
+  <body>
+    <!--Блок сообщение-->
+    <div class="card">
+      <div class="card__header">
+        <h2 class="card__title">Nelina Anastasiia</h2>
+
+        <img class="card__avatar" src="depositphotos_18438035-stock-photo-funny-bee-cartoon.jpg" alt="" />
+      </div>
+      <p class="card__message card__message--green">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+      </p>
+      <p class="card__date">07.09.2022</p>
+    </div>
+  </body>
+</html>
