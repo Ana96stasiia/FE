@@ -4,10 +4,107 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-  <link href="https://github.com/Ana96stasiia/FE/blob/3bced7859505a93da2c8f92bd4665c22f01e908f/login.html">
+    <title>Login</title>
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings
+    /line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <style>
+       @import url('https://fonts.googleapis.com/css2?family=segoeprint:wght@300;400;500;900&display=swap');
+        body {
+            font-family: 'algerian', sans-serif;
+            background-color: rgb(244, 221, 244);
+            /*выровнять все по центру*/
+            margin: ; /*выравнивание блока по вертикали*/
+            display: flex;
+            justify-content: center; 
+        }
+        body, htmp {
+            height: 100%;
+        }
+        .Login {
+            background: paleturquoise;
+            padding: /*размер*/
+            width: 400px;
+            height: 500px;
+        }
+        .span {
+            justify-content: left;
+            width: 20px;
+            height: 20px;
+        }
+        .Login__input {
+            background: rgb(130, 128, 128);
+            margin: 10px;
+            position: relative;
+            right: 130px;
+            top: 180px;
+            color: aqua;
+        }
+        .Login__button {
+            position: relative;
+            top: 220px;
+            right: 130px;
+            background: aqua;
+            border-radius: 20px;
+            font-family: algerian;
+        }
+        .title {
+            position: relative;
+            top: 100px;
+            right: 120px;
+        }
+        .Login__icon1 {
+            width: 100px;
+            height: 100px;
+            position: relative;
+            right: 30px;
+        }
+        .picture {
+             width: 600px;
+            height: 500px;
+            display: flex;
+           position: relative;
+           left: 350px;
+           bottom: 191px;
+        }
+    </style>
 </head>
 <body>
-    
+    <div class="Login" style="text-align: center; "> <!--БЛОК-->
+
+        <div class="Login__row"> <!--ПОЛЕ ВВОДА-->
+            <span class="Login__icon1">
+                <i class="las la-hand-point-up"></i>
+            </span>
+        </div>
+
+        <h1 class="title"> <!--ЗАГОЛОВОК-->
+            W e l c o m e!
+        </h1>
+
+        <div class="Login__row">
+        <div class="Login__input-container">
+        <div class="Login__icon2">
+            <i class="las la-user"></i>
+            <input class="Login__input" type="text"> <!--ПОЛЕ ВВОДА-->
+        </div>
+        </div>
+
+        <div class="Login__row">
+        <div class="Login__input-container">
+        <div class="Login__icon3">
+            <i class="las la-key"></i>
+            <input class="Login__input" type="password"> <!--ПОЛЕ ВВОДА-->
+        </div>
+        </div>
+
+        <div>
+            <button class="Login__button">Log In</button> <!--КНОПКА-->
+        </div>
+    </div>
+    <div class="picture">
+        <img src="1528640622_31.jpg">
+    </div>
+    </div>
+    </div>
 </body>
 </html>
